@@ -1,0 +1,26 @@
+@import "about";
+@import "baner";
+@import "blog";
+@import "clientc";
+@import "contact";
+@import "footer";
+@import "header";
+@import "media";
+@import "portfolio";
+@import "services";
+@import "team";
+@import "bootstrap-castum";
+@import "themes";
+
+
+
+
+
+body {
+  min-width: 320px;
+  background-color: #272727;
+  font-family: $font-f2;
+}
+* {
+  box-sizing: border-box;
+}

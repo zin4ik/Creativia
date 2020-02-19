@@ -1,0 +1,47 @@
+@import "themes";
+
+.about {
+  width: 100%;
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+  background-color: #ffffff;
+  color: #262626;
+
+  .abaut__h3 {
+    width: 100%;
+    font-size: 2rem;
+    font-family: $font-f2;
+    font-weight: bold;
+    text-align: center;
+    margin: 2rem 0;
+
+    &-span {
+      color: $colorRed;
+    }
+  }
+}
+.about__descr {
+  width: 100%;
+  font-size: 1rem;
+  font-family: $font-f1;
+  text-align: center;
+  line-height: 1.375;
+
+  &-span {
+    color: $colorRed;
+  }
+}
+#accordionExample{
+    .accordion__block {
+        margin-bottom: 0.75rem;
+        border-bottom: 1px solid #ccc;
+    }
+    .accordion__btn{
+        font-size:1.25rem;
+        .far{
+            padding:0.85rem 1.25rem ;
+            margin-right: 2.5rem;
+            border-right: 1px solid #ccc;
+        }
+    }
+}

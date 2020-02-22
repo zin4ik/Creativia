@@ -105,3 +105,16 @@
   -webkit-clip-path: url("#polygon-clip-hexagon");
   clip-path: url("#polygon-clip-hexagon");
 }
+
+.about__hexagon-element{
+  border-bottom: 1px solid black;
+  display: flex;
+    justify-content: center;
+}
+.about__hexagon-element-item{
+  width: 1.5rem;
+  height: 1.25rem;
+  position: absolute;
+  top: -0.65rem;
+  background-color: black;
+}

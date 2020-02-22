@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .about {
   width: 100%;
   padding-top: 6.25rem;
@@ -6,16 +7,16 @@
   color: #262626;
 }
 
-.about .abaut__h3 {
+.about .about__h3 {
   width: 100%;
   font-size: 2rem;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   text-align: center;
-  margin: 2rem 0;
+  margin-bottom: 3rem;
 }
 
-.about .abaut__h3-span {
+.about .about__h3-span {
   color: #ff0036;
 }
 
@@ -25,10 +26,15 @@
   font-family: "Lato", sans-serif;
   text-align: center;
   line-height: 1.375;
+  margin-bottom: 6.875rem;
 }
 
 .about__descr-span {
   color: #ff0036;
+}
+
+.abaut__accordion__descr {
+  margin-bottom: 2.8rem;
 }
 
 #accordionExample .accordion__block {
@@ -44,6 +50,72 @@
   padding: 0.85rem 1.25rem;
   margin-right: 2.5rem;
   border-right: 1px solid #ccc;
+}
+
+/*===шестиугольник===*/
+.clip-svg-img {
+  width: 0;
+  height: 0;
+}
+
+.polygon-each {
+  width: 100%;
+  height: auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.polygon-clip-hexagon {
+  width: 23.75em;
+  height: 21.25em;
+  overflow: hidden;
+}
+
+.polygon-clip-hexagon_img {
+  width: auto;
+  height: 100%;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.polygon-each_ite-1 {
+  top: 1.5rem;
+  left: 0;
+}
+
+.polygon-each_ite-2 {
+  top: 1.5rem;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  z-index: 1;
+  background: #ffffff;
+}
+
+.polygon-each_ite-2::after {
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+}
+
+.polygon-each_ite-3 {
+  top: 1.5rem;
+  right: 0;
+}
+
+.polygon-clip-hexagon_img-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.polygon-clip-hexagon {
+  -webkit-clip-path: polygon(23% 0, 77% 0, 100% 50%, 77% 100%, 23% 100%, 0 50%);
+  clip-path: polygon(23% 0, 77% 0, 100% 50%, 77% 100%, 23% 100%, 0 50%);
+  -webkit-clip-path: url("#polygon-clip-hexagon");
+  clip-path: url("#polygon-clip-hexagon");
 }
 
 .baner__fon {

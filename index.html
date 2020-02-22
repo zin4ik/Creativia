@@ -164,9 +164,9 @@
       <!--/#carouselExampleControls-->
       <section id="about" class="about">
         <div class="container">
-          <h3 class="h3 abaut__h3">
+          <h3 class="h3 about__h3">
             about
-            <span class="abaut__h3-span">creativia</span>
+            <span class="about__h3-span">creativia</span>
           </h3>
           <p class="about__descr">
             Lorem ipsum dolor sit amet, consectetur
@@ -176,7 +176,13 @@
           </p>
           <div class="row">
             <div class="col-6">
-              p.
+              <p class="abaut__accordion__descr">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
+                dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt.
+                Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum
+                lorem eu tortor porta placerat. Suspendisse ac vestibulum eros.
+                Nulla mi ipsum, consequat commodo condimentum vitae,
+              </p>
               <div class="accordion" id="accordionExample">
                 <div class="card accordion__block">
                   <div class="card-header p-0" id="headingOne">
@@ -289,7 +295,52 @@
                 </div>
               </div>
             </div>
-            <div class="col-6"></div>
+            <div class="col-6">
+              <!--=====шестиугольник======-->
+              <div class=" row polygon-each position-relative">
+                <div
+                  class=" polygon-clip-hexagon polygon-each_ite-1  position-absolute"
+                >
+                  <img
+                    src="./img/about1.jpg"
+                    alt="img1"
+                    class="polygon-clip-hexagon_img"
+                  />
+                  <div class="polygon-clip-hexagon_img-bg"></div>
+                </div>
+                <div
+                  class=" polygon-clip-hexagon polygon-each_ite-2 position-absolute"
+                >
+                  <img
+                    src="/img/about2.jpg"
+                    alt="img2"
+                    class="polygon-clip-hexagon_img"
+                  />
+                </div>
+                <div
+                  class=" polygon-clip-hexagon polygon-each_ite-3 position-absolute"
+                >
+                  <img
+                    src="/img/about3.jpg"
+                    alt="img3"
+                    class="polygon-clip-hexagon_img"
+                  />
+                  <div class="polygon-clip-hexagon_img-bg"></div>
+                </div>
+                <svg class="clip-svg-img">
+                  <defs>
+                    <clipPath
+                      id="polygon-clip-hexagon"
+                      clipPathUnits="objectBoundingBox"
+                    >
+                      <polygon
+                        points="0.23 0, 0.77 0, 1 0.5, 0.77 1, 0.23 1, 0 0.5"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </div>
           </div>
           <!--/row-->
         </div>

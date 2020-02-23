@@ -61,7 +61,7 @@
   height: auto;
   justify-content: space-around;
 }
-.polygon-clip-hexagon {
+.about__hexagon-element-item {
   width: 23.75em;
   height: 21.25em;
   overflow: hidden;
@@ -72,10 +72,14 @@
   transform: scale(1.4);
 }
 .polygon-each_ite-1 {
+  width: 23.125rem;
+  height: 20rem;
   top: 1.5rem;
   left: 0;
 }
 .polygon-each_ite-2 {
+  width: 23.125rem;
+  height: 20rem;
   top: 1.5rem;
   transform: scale(1.05);
   z-index: 1;
@@ -88,6 +92,8 @@
   right: 5px;
 }
 .polygon-each_ite-3 {
+  width: 23.125rem;
+  height: 20rem;
   top: 1.5rem;
   right: 0;
 }
@@ -99,22 +105,101 @@
   background-color: rgba(#000000, 0.6);
 }
 
-.polygon-clip-hexagon {
+.polygon-clip-hexagon,
+.polygon-clip-hexagon::after {
   -webkit-clip-path: polygon(23% 0, 77% 0, 100% 50%, 77% 100%, 23% 100%, 0 50%);
   clip-path: polygon(23% 0, 77% 0, 100% 50%, 77% 100%, 23% 100%, 0 50%);
   -webkit-clip-path: url("#polygon-clip-hexagon");
   clip-path: url("#polygon-clip-hexagon");
 }
 
-.about__hexagon-element{
+.about__hexagon-element {
   border-bottom: 1px solid black;
   display: flex;
-    justify-content: center;
+  justify-content: center;
 }
-.about__hexagon-element-item{
+.about__hexagon-element-item {
   width: 1.5rem;
   height: 1.25rem;
   position: absolute;
   top: -0.65rem;
   background-color: black;
+}
+
+///advant
+.about__advant {
+  &-item {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    &_icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      position: relative;
+      width: 90px;
+      height: 80px;
+
+      background-color: none;
+      color: $colorBlack;
+
+      &:after {
+        content: "";
+        position: absolute;
+        background-color: white;
+      }
+
+      .advant-icon {
+        text-align: center;
+        position: absolute;
+        background-color: #ffffff;
+        color: $colorBlack;
+        font-size: 1.75rem;
+        z-index: 1;
+        transition: all 0.2s linear;
+        &:hover {
+          color: white;
+          background-color: $colorRed;
+          padding: 3rem;
+        } 
+      }
+    }
+
+    &_title {
+      padding-top: 2.25rem;
+      padding-bottom: 1.625rem;
+      margin: 0;
+
+      font-size: 1.25rem;
+      font-family: $font-f2;
+      font-weight: 600;
+      color: rgb(38, 38, 38);
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    &_descr {
+      font-size: 1rem;
+      font-family: "Lato";
+      color: rgb(80, 80, 80);
+      line-height: 1.375;
+      text-align: center;
+    }
+    .advant-border {
+      background-color: $colorBlack;
+
+      // &:hover{
+      //   background-color:$colorRed;
+      // }
+    }
+    .advant-border::after {
+      top: 1px;
+      bottom: 1px;
+      left: 1px;
+      right: 1px;
+    }
+  }
 }

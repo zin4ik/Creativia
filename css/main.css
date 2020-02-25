@@ -422,6 +422,84 @@
   bottom: 2px;
 }
 
+.portfolio {
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+}
+
+.portfolio__h3 {
+  text-align: center;
+  color: white;
+}
+
+.portfolio__btn {
+  margin-left: 1.375rem;
+  color: #a4a4a4;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.375;
+}
+
+.portfolio__gallery {
+  width: 100%;
+}
+
+.gallery__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.gallery__row .small-block {
+  width: 300px;
+  height: 350px;
+}
+
+.gallery__item {
+  position: relative;
+}
+
+.gallery__item-img {
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.gallery__item-bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -11188,14 +11266,27 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   min-width: 320px;
+  max-width: 1400px;
   background-color: #272727;
   font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  margin: 0 auto;
 }
 
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.h3 {
+  font-size: 1.875rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
 }
 /*# sourceMappingURL=main.css.map */

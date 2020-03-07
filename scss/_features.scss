@@ -1,0 +1,15 @@
+.features{
+    position:relative;
+    padding:6.25rem 0;
+    background-color: #ffffff;
+    &__title{
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    &__descr{
+        text-align: center;
+    }
+}
+.span-txt_red{
+    color:$colorRed;
+}

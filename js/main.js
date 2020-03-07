@@ -4,7 +4,8 @@ jQuery(document).ready(function($) {
     arrows: false,
     infinite: true,
     speed: 300,
-    slidesToShow: 1,
+    slidesToShow: 3,
+    autoplay: true,
     centerMode: true,
     variableWidth: true,
     responsive: [
@@ -14,7 +15,7 @@ jQuery(document).ready(function($) {
           arrows: false,
           centerMode: true,
           centerPadding: "40px",
-          slidesToShow: 3
+          slidesToShow: 2
         }
       },
       {

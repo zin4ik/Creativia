@@ -1,0 +1,81 @@
+/*trapezoid*/
+.polygon-clip-trapezoid-top,
+.polygon-clip-trapezoid-top::after {
+  -webkit-clip-path: polygon(100% 50%, 77% 100%, 23% 100%, 0 50%);
+  clip-path: polygon(100% 50%, 77% 100%, 23% 100%, 0 50%);
+  -webkit-clip-path: url("#polygon-clip-trapezoid-top");
+  clip-path: url("#polygon-clip-trapezoid-top");
+}
+.polygon-clip-trapezoid-bottom,
+.polygon-clip-trapezoid-bottom::after {
+  -webkit-clip-path: polygon(23% 0, 77% 0, 100% 50%, 0 50%);
+  clip-path: polygon(23% 0, 77% 0, 100% 50%, 0 50%);
+  -webkit-clip-path: url("#polygon-clip-trapezoid-bottom");
+  clip-path: url("#polygon-clip-trapezoid-bottom");
+}
+
+.black__hexagon-element{
+  position:relative;
+  width:480px;
+  height:600px;
+  border:1px solid black;
+  margin:20px;
+}
+.trapezoid-top, .trapezoid-bottom{
+  position:absolute;
+  width:480px;
+  height:200px;
+  bottom:200px;
+}
+.grey__hexagon-element-item{
+
+    width: 480px;
+    height: 400px;
+  
+    background-color: #262626;
+}
+
+.black__hexagon-element-item {
+    width: 480px;
+    height: 400px;
+    background-color: #494949;
+  }
+
+.element-block{
+  position:absolute;
+  width:370px;
+  height: 480px;
+  bottom:50px;
+  left:11.5%;
+
+  
+}
+.green-block{
+  background-color:#d8d8d8;
+  width:100%;
+  height:100%;
+  padding:48px 10px 10px 10px;
+  border-radius:20px;
+  box-shadow: 6px -35px 74px -11px rgba(0,0,0,0.25);
+  
+
+}
+.element-img{
+  background-color:#36395b;
+  border:2px solid black;
+  width:100%;
+  height:420px;
+  
+  
+}
+.element-img:before{
+  content:"";
+  width:10px;
+  height:10px;
+  border-radius:10px;
+  background-color:#000000;
+  display:block;
+  position:absolute;
+  top:12px;
+  left:50%;
+}

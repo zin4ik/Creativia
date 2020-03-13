@@ -26,6 +26,7 @@
     margin-top: 1.875rem;
     padding: 1.875rem;
     background-color: #343434;
+    transition: all 0.2s linear;
 
     &-txt {
       font-size: 1rem;
@@ -48,6 +49,7 @@
 
   background-color: #a4a4a4;
   color: $colorBlack;
+  transition: all 0.2s linear;
 
   .fas_icon {
     font-size: 1.5rem;

@@ -636,6 +636,109 @@
   height: 350px;
 }
 
+.price {
+  position: relative;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.sale-card__title {
+  padding: 2rem;
+  font-size: 1.25rem;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  line-height: 0.082;
+  text-align: center;
+  background-color: #262626;
+}
+
+.sale-card__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sale-card__price {
+  padding: 2rem;
+  background-color: #f2f2f2;
+  color: #262626;
+  text-align: center;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.sale-card__price-item {
+  font-size: 3rem;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  color: inherit;
+  line-height: 0.055;
+  text-align: center;
+}
+
+.sale-card__price-condittion {
+  font-family: "Lato", sans-serif;
+  color: inherit;
+  line-height: 0.172;
+  text-align: center;
+}
+
+.sale-card__descr {
+  font-size: 1rem;
+  font-family: "Myriad Pro";
+  color: #262626;
+  line-height: 3.25;
+  text-align: center;
+  border-top: none;
+  border: 1px solid #e7e7e7;
+}
+
+.sale-card__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 2.5em;
+  padding: 1rem;
+  margin: 1.25rem;
+  font-size: 1.125rem;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  background-color: #262626;
+  border: 1px solid #e7e7e7;
+  text-transform: uppercase;
+  line-height: 0.092;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.sale-card__btn:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.sale-card:hover .sale-card__price {
+  background-color: #ff0036;
+  color: #ffffff;
+}
+
+.sale-card:hover .sale-card__btn {
+  background-color: #ff0036;
+  color: #ffffff;
+}
+
 .services {
   color: #ffffff;
 }
@@ -674,6 +777,8 @@
   margin-top: 1.875rem;
   padding: 1.875rem;
   background-color: #343434;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .services__block-item_descr-txt {
@@ -702,6 +807,8 @@
   margin-right: 1.875rem;
   background-color: #a4a4a4;
   color: #262626;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .services__hexagon-element .fas_icon {

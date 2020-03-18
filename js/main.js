@@ -29,4 +29,32 @@ jQuery(document).ready(function($) {
       }
     ]
   });
+  $(".blog__card").slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: true,
+    vertical: true,
+    autoplay: false,
+    prevArrow: $('.card-prev'),
+    nextArrow: $('.card-next'),
+    verticalSwiping: true
+  });
+  //text-overflow
+  function cropTitle() {
+    $(".blog__card-block_descr").each(function() {
+      var $title = $(this).find("p");
+      while ($title.height() > $(this).height()) {
+        $title.text(
+          $title
+            .text()
+            .split(" ")
+            .slice(0, $title.text().split(" ").length - 1)
+            .join(" ") + "..."
+        );
+      }
+    });
+  }
+  cropTitle();
+
+  //--/text-overflow
 });

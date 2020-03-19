@@ -1,0 +1,70 @@
+.social {
+  width: 100%;
+  background-color: $colorBlack;
+}
+.social__title {
+  color: #ffffff;
+}
+.social__block {
+  &-item {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    &_link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 75px;
+      height: 70px;
+      margin-bottom: 2rem;
+      border: 1px solid $colorRed;
+      background-color: transparent;
+      color: $colorRed;
+      transition: all 0.2s linear;
+      &::before {
+        content: "";
+        display: block;
+        clear: both;
+        position: absolute;
+        border-top: 1px solid $colorRed;
+        border-bottom: 1px solid $colorRed;
+        transform: rotate(63deg);
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+      }
+      &::after {
+        content: "";
+        display: block;
+        clear: both;
+        position: absolute;
+        border-top: 1px solid $colorRed;
+        border-bottom: 1px solid $colorRed;
+        transform: rotate(117deg);
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+      }
+      i {
+        font-size: 1.5rem;
+        color: inherit;
+      }
+      &:hover {
+        background-color: $colorRed;
+        color: #ffffff;
+      }
+    }
+
+    &_users {
+      color: #ffffff;
+      font-size: 1rem;
+      font-family: $font-f1;
+      line-height: 1.375;
+    }
+  }
+}

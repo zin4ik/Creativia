@@ -1,0 +1,41 @@
+.contact {
+  position: relative;
+  padding-top: 6rem;
+  background-color: #ffffff;
+}
+
+.form-block {
+  display: flex;
+  flex-flow: column;
+  position: absolute;
+  left: 55%;
+  bottom: 0;
+  background-color: #ffffff;
+  width: 35%;
+  margin: 0 auto;
+  padding: 3rem 2.5rem;
+  box-shadow: 1px 1px 13px 1px rgba(0, 0, 0, 0.36);
+  input {
+    width: 100%;
+    margin-bottom: 1.25rem;
+  }
+}
+.form-btn {
+  float: right;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 1.675rem;
+  padding: 0.875rem 2rem;
+  border: none;
+  background-color: $colorBlack;
+}
+#form-textarea {
+  width: 100%;
+}
+.form-block .form-block_title {
+  font-size: 1.25rem;
+  font-family: $font-f2;
+  color: $colorBlack;
+  text-transform: uppercase;
+  line-height: 2.683;
+}

@@ -125,6 +125,12 @@
   clip-path: url("#polygon-clip-hexagon");
 }
 
+.about__advant {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .about__advant-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -210,6 +216,18 @@
   bottom: 1px;
   left: 1px;
   right: 1px;
+}
+
+@media screen and (max-width: 992px) {
+  .about__hexagon-block {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap-reverse;
+            flex-flow: row wrap-reverse;
+  }
+  .polygon-each {
+    height: 370px;
+  }
 }
 
 .baner__fon {
@@ -620,7 +638,7 @@ footer {
 
 .header__block-logo {
   position: absolute;
-  left: 0;
+  left: -90px;
   top: -1rem;
   width: 15.62rem;
   height: 6.87rem;
@@ -695,6 +713,49 @@ footer {
   left: 2px;
   right: 2px;
   bottom: 2px;
+}
+
+@media screen and (max-width: 991px) {
+  .header .header__block-logo {
+    top: -1.5rem;
+    left: 0;
+  }
+  .header .header__mob-menu {
+    margin-top: 350px;
+    width: 85%;
+    border: 1px solid #ff0036;
+    background-color: #262626;
+  }
+  .header .header__btn {
+    position: absolute;
+    right: 5px;
+    background-color: #ff0036;
+  }
+  .header .txt_menu {
+    font-size: 1.5rem;
+    padding-top: 2rem;
+  }
+  .header__block-logo_h1 {
+    font-size: 1.5rem;
+    left: 2.1rem;
+    padding-top: 0.6rem;
+  }
+  .clip-each {
+    width: 11rem;
+    height: 5rem;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .header__block-logo_h1 {
+    font-size: 1.5rem;
+    left: 2rem;
+    padding-top: 0.6rem;
+  }
+  .clip-each {
+    width: 10rem;
+    height: 5rem;
+  }
 }
 
 .portfolio {
@@ -1027,8 +1088,8 @@ footer {
 
 .card__img-block {
   position: relative;
-  max-width: 270px;
-  max-height: 220px;
+  width: 100%;
+  height: 220px;
   overflow: hidden;
 }
 
@@ -1103,6 +1164,50 @@ footer {
   color: #262626;
   line-height: 1.375;
   text-align: center;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .card__img-block {
+    height: 180px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .card__img-block {
+    height: 220px;
+  }
+}
+
+@media screen and (min-width: 568px) and (max-width: 767px) {
+  .card__img-block {
+    height: 170px;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  #team .card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card__img-block {
+    width: 50%;
+    height: 220px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .card__img-block_link-item {
+    width: 40px;
+    height: 40px;
+  }
+  .card__img-block {
+    height: 120px;
+  }
 }
 
 /*!
@@ -11982,6 +12087,18 @@ a.text-dark:hover, a.text-dark:focus {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 991px) {
+  .feature__figure {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap-reverse;
+            flex-flow: row wrap-reverse;
+  }
+}
+
 .twitter-block {
   position: relative;
   width: 100%;
@@ -12102,6 +12219,7 @@ a.text-dark:hover, a.text-dark:focus {
   width: 75px;
   height: 70px;
   margin-bottom: 2rem;
+  overflow: hidden;
   border: 1px solid #ff0036;
   background-color: transparent;
   color: #ff0036;
@@ -12226,6 +12344,7 @@ a.text-dark:hover, a.text-dark:focus {
   width: 100%;
   height: 100%;
   padding: 48px 10px 10px 10px;
+  overflow: hidden;
   background-color: #d8d8d8;
   border: 2px solid #d2d2d2;
   border-radius: 20px;
@@ -12279,6 +12398,58 @@ a.text-dark:hover, a.text-dark:focus {
   left: -50%;
 }
 
+@media screen and (max-width: 576px) {
+  .figure__hexagon-element {
+    position: relative;
+    margin: 0 auto;
+    width: 300px;
+    height: 400px;
+  }
+  .figure__trapezoid {
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    bottom: 200px;
+  }
+  .figure__black__hexagon-element-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: 300px;
+    height: 280px;
+    background-color: #262626;
+  }
+  .figure__grey__hexagon-element-item {
+    position: absolute;
+    top: 0;
+    width: 300px;
+    height: 280px;
+    background-color: #494949;
+  }
+  .figure__element-block {
+    position: absolute;
+    width: 230px;
+    height: 320px;
+    bottom: 90px;
+    left: 11.5%;
+  }
+  .figure__img {
+    position: absolute;
+    height: 50%;
+    left: -50%;
+  }
+}
+
 .skill {
   width: 100%;
   background-color: #ffffff;
@@ -12296,8 +12467,8 @@ a.text-dark:hover, a.text-dark:focus {
 .skill-circle {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row;
-          flex-flow: row;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -12347,8 +12518,7 @@ a.text-dark:hover, a.text-dark:focus {
   width: 1em;
   height: 1em;
   border-radius: 50%;
-  float: left;
-  margin: 0 0.1em 0.1em 0;
+  margin: 0 auto;
   background-color: #e0e0e0;
 }
 
@@ -13010,6 +13180,12 @@ a.text-dark:hover, a.text-dark:focus {
 
 .c100.red.dark:hover > span {
   color: #ac0404;
+}
+
+@media screen and (max-width: 786px) {
+  .skill-circle .c100 {
+    font-size: 100px;
+  }
 }
 
 html {

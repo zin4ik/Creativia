@@ -1,8 +1,8 @@
 .header {
   position: fixed;
-  top:0;
-  left:0;
-  z-index:3;
+  top: 0;
+  left: 0;
+  z-index: 3;
   display: flex;
   flex-flow: row;
   align-items: center;
@@ -13,7 +13,7 @@
 
   &__block-logo {
     position: absolute;
-    left: 0;
+    left: -90px;
     top: -1rem;
     width: 15.62rem;
     height: 6.87rem;
@@ -27,7 +27,7 @@
     left: 4rem;
     padding-top: 1.1rem;
   }
-  .collapse_block{
+  .collapse_block {
     justify-content: flex-end;
   }
   .txt_menu {
@@ -83,4 +83,49 @@
   left: 2px;
   right: 2px;
   bottom: 2px;
+}
+
+@media screen and(max-width:991px) {
+  .header {
+    .header__block-logo {
+      top: -1.5rem;
+      left: 0;
+    }
+    .header__mob-menu {
+      margin-top: 350px;
+      width: 85%;
+      border: 1px solid $colorRed;
+      background-color: $colorBlack;
+    }
+    .header__btn {
+      position: absolute;
+      right: 5px;
+      background-color: $colorRed;
+    }
+
+    .txt_menu {
+      font-size: 1.5rem;
+      padding-top: 2rem;
+    }
+  }
+  .header__block-logo_h1 {
+    font-size: 1.5rem;
+    left: 2.1rem;
+    padding-top: 0.6rem;
+  }
+  .clip-each {
+    width: 11rem;
+    height: 5rem;
+  }
+}
+@media screen and(max-width:1199px) {
+  .header__block-logo_h1 {
+    font-size: 1.5rem;
+    left: 2rem;
+    padding-top: 0.6rem;
+  }
+  .clip-each {
+    width: 10rem;
+    height: 5rem;
+  }
 }

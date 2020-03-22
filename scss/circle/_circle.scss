@@ -34,8 +34,9 @@
   width: 1em;
   height: 1em;
   border-radius: 50%;
-  float: left;
-  margin: 0 0.1em 0.1em 0;
+  // float: left;
+  // margin: 0 0.1em 0.1em 0;
+  margin:0 auto;
   background-color: $secondary-color;
   // center circle to its parent
   &.center {
@@ -220,5 +221,11 @@
         color: $primary-color-red-dark;
       }
     }
+  }
+}
+
+@media screen and(max-width:786px) {
+  .skill-circle .c100 {
+    font-size: 100px;
   }
 }

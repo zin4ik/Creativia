@@ -113,10 +113,9 @@
   clip-path: url("#polygon-clip-hexagon");
 }
 
-
-
 ///advant
 .about__advant {
+  justify-content: center;
   &-item {
     display: flex;
     flex-flow: column nowrap;
@@ -190,5 +189,14 @@
       left: 1px;
       right: 1px;
     }
+  }
+}
+
+@media screen and(max-width:992px) {
+  .about__hexagon-block {
+    flex-flow: row wrap-reverse;
+  }
+  .polygon-each {
+    height: 370px;
   }
 }

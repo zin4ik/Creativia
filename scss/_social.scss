@@ -90,3 +90,22 @@
     }
   }
 }
+
+@media screen and(max-width:576px) {
+  .social__block-item {
+    margin: 0 0.5rem;
+  }
+  .social__block-item_link {
+    width: 55px;
+    height: 50px;
+  }
+  .social__img {
+    left: -30%;
+  }
+}
+@media screen and(max-width:767px) {
+  .social__img {
+    width: auto;
+    height: 100%;
+  }
+}

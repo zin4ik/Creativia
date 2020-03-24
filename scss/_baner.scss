@@ -1,7 +1,6 @@
 @import "themes";
 
 .baner {
-  
   &__fon {
     position: absolute;
     left: 0px;
@@ -57,15 +56,22 @@
     margin: 2rem 1rem;
     border: none;
   }
- 
+  .baner__carousel-img {
+    width: 100%;
+    height: auto;
+  }
 }
-#carouselExampleControls{
-   .baner__chevron:hover {
+.baner__carousel-img {
+  width: 100%;
+}
+#carouselExampleControls {
+  .baner__chevron:hover {
     color: $colorRed;
   }
 }
-.fa-chevron-right, .fa-chevron-left{
-  font-size:2rem;
+.fa-chevron-right,
+.fa-chevron-left {
+  font-size: 2rem;
 }
 // .fa-chevron-right, .fa-chevron-left:hover {
 //   color: $colorRed;
@@ -75,4 +81,49 @@
 }
 .btn-two {
   background-color: #131313;
+}
+
+@media screen and (max-width: 567px) {
+  .baner__h2 {
+    width: 90%;
+  }
+  .baner__descr {
+    width: 90%;
+  }
+  .baner__btns-block {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #carouselExampleControls {
+    .carousel-inner {
+      width: 100%;
+      height: 400px;
+      .carousel-item {
+        width: 100%;
+        height: 100%;
+        .baner__carousel-img {
+          width: auto;
+          height: 100%;
+        }
+      }
+    }
+
+    .baner__h2 {
+      font-size: 1rem;
+    }
+    .baner__descr {
+      font-size: 0.675rem;
+    }
+
+    .baner__btn {
+      font-size: 0.625rem;
+      padding: 0.7rem 1rem;
+      margin: 1rem;
+    }
+    .baner__chevron {
+      display: none;
+    }
+  }
 }

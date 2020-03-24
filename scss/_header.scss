@@ -84,6 +84,47 @@
   right: 2px;
   bottom: 2px;
 }
+@media screen and (max-width: 480px) {
+  .header {
+    height: 2rem;
+
+    .header__block-logo {
+      top: -1.5rem;
+      left: 0;
+      width: 7rem;
+      height: 4rem;
+    }
+    .header__mob-menu {
+      margin-top: 350px;
+      width: 85%;
+      border: 1px solid $colorRed;
+      background-color: $colorBlack;
+    }
+    .header__btn {
+      position: absolute;
+      right: 5px;
+      background-color: $colorRed;
+    }
+
+    .txt_menu {
+      font-size: 1.5rem;
+      padding-top: 2rem;
+    }
+    .header__block-logo_h1 {
+      font-size: 1rem;
+      left: 1.5rem;
+      padding-top: 0.6rem;
+    }
+    .clip-each {
+      width: 7rem;
+      height: 3.5rem;
+    }
+    .navbar-toggler-icon {
+      width: 1em;
+      height: 1em;
+    }
+  }
+}
 
 @media screen and(max-width:991px) {
   .header {

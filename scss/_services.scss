@@ -63,3 +63,18 @@
 .services__block-item:hover .services__block-item_descr {
   background-color: rgba($colorRed, 0.2);
 }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .services__block-item_descr {
+    height: 10rem;
+    padding: 1rem;
+    overflow: hidden;
+  }
+}
+@media screen and(min-width:576px) and (max-width: 767px) {
+  .services__block-item_descr {
+    height: 12rem;
+    padding: 1rem;
+    overflow: hidden;
+  }
+}

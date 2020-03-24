@@ -2,8 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="https://zin4ik.github.io/creativia/">
     <title>Creativia</title>
+
     <link
       rel="stylesheet"
       type="text/css"
@@ -113,13 +116,13 @@
       >
         <div class="carousel-inner " id="home">
           <div class="carousel-item active ">
-            <img src="/img/baner1.jpg" class="d-block w-100 h-100" alt="img" />
+            <img src="/img/baner1.jpg" class="d-block baner__carousel-img" alt="img" />
           </div>
           <div class="carousel-item ">
-            <img src="/img/baner3.jpg" class="d-block w-100 h-100" alt="img" />
+            <img src="/img/baner3.jpg" class="d-block baner__carousel-img" alt="img" />
           </div>
           <div class="carousel-item">
-            <img src="/img/baner4.jpg" class="d-block w-100 h-100" alt="img" />
+            <img src="/img/baner4.jpg" class="d-block baner__carousel-img" alt="img" />
           </div>
           <div class="baner__fon"></div>
           <!--/bg_fon-->
@@ -300,7 +303,8 @@
               <!--=====шестиугольник======-->
               <div class="row polygon-each position-relative">
                 <div
-                  class="polygon-clip-hexagon polygon-each_ite-1  position-absolute"
+                  class="polygon-clip-hexagon
+                   polygon-each_item"
                 >
                   <img
                     src="./img/about1.jpg"
@@ -310,7 +314,9 @@
                   <div class="polygon-clip-hexagon_img-bg"></div>
                 </div>
                 <div
-                  class=" polygon-clip-hexagon polygon-each_ite-2 position-absolute"
+                  class=" polygon-clip-hexagon
+                   polygon-each_item                  
+                   polygon-each_item-front"
                 >
                   <img
                     src="/img/about2.jpg"
@@ -319,7 +325,8 @@
                   />
                 </div>
                 <div
-                  class=" polygon-clip-hexagon polygon-each_ite-3 position-absolute"
+                  class=" polygon-clip-hexagon
+                  polygon-each_item"
                 >
                   <img
                     src="/img/about3.jpg"
@@ -652,7 +659,7 @@
         </div>
         <!-- /.container -->
       </section>
-
+              
       <!-- /.features -->
       <section id="clients" class="client">
         <div class="client__fon padding-section">
@@ -665,8 +672,8 @@
             egestas turpis.
           </p>
           <div class="row mt-5">
-            <div class="col-6">
-              <h4 class="carusel__title">happy clients say</!DOCTYPE> 
+            <div class="col-xl-6 col-lg-6 col-md-10 col-sm-12 mb-4">
+              <h4 class="carusel__title">happy clients say</h4> 
               <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators carousel__list">
                   <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active carousel__list-btn"></li>
@@ -707,7 +714,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-6 types-work">
+            <div class="col-xl-6 col-lg-6 types-work">
               <div class="types-work_item">
                 <img src="./img/client-graphicriver.png" alt="img" 
                 class="types-work_item-img">
@@ -937,7 +944,7 @@
 
            <div class="row services__block pt-5">
 
-             <div class="col-6 services__block-item">
+             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-10 services__block-item">
                <div class="services__block-item_title">
                  <div class="services__hexagon-element polygon-clip-hexagon">
                   <i class="fas fa-code fas_icon"></i>
@@ -952,7 +959,7 @@
              </div>
              <!-- /.col-6 -->
 
-             <div class="col-6 services__block-item">
+             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-10 services__block-item">
               <div class="services__block-item_title">
                 <div class="services__hexagon-element polygon-clip-hexagon">
                  <i class="fab fa-css3-alt fas_icon"></i>
@@ -967,7 +974,7 @@
             </div>
             <!-- /.col-6 -->
 
-            <div class="col-6 services__block-item">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-10 services__block-item">
               <div class="services__block-item_title">
                 <div class="services__hexagon-element polygon-clip-hexagon">
                  <i class="fab fa-wordpress-simple fas_icon"></i>
@@ -982,7 +989,7 @@
             </div>
             <!-- /.col-6 -->
 
-            <div class="col-6 services__block-item">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-10 services__block-item">
               <div class="services__block-item_title">
                 <div class="services__hexagon-element polygon-clip-hexagon">
                  <i class="fas fa-tablet-alt fas_icon"></i> 
@@ -997,7 +1004,7 @@
             </div>
             <!-- /.col-6 -->
            
-            <div class="col-6 services__block-item">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-10 services__block-item">
               <div class="services__block-item_title">
                 <div class="services__hexagon-element polygon-clip-hexagon"> 
                  <i class="fas fa-pencil-alt fas_icon"></i>
@@ -1012,7 +1019,7 @@
             </div>
             <!-- /.col-6 -->
            
-            <div class="col-6 services__block-item">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-10 services__block-item">
               <div class="services__block-item_title">
                 <div class="services__hexagon-element polygon-clip-hexagon"> 
                  <i class="fas fa-laptop fas_icon"></i>
@@ -1178,12 +1185,12 @@
         <i class="fas fa-chevron-right card-prev"></i>
         <div class="container blog__card">
           
-          <div>
+          <div class="null-div">
              <div class="row blog__card-block mb-5">
-            <div class="col-4 ">
+            <div class="col-lx-4 col-lg-5 col-md-6 col-sm-10 ">
               <img src="./img/blog-1.png" alt="blog-img" class="blog__card-block_img">
             </div>
-            <div class="col-6 card-txt-block">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-10 card-txt-block">
               <h5 class="h5 blog__card-block_title">Lorem ipsum dolor sit amet, consectetur</h5>
               <div class="blog__card-block_review">
                 <span class="blog__card-block_review-item"><i class="fas fa-user"></i> <i class="card_user-rol">admin</i></span>
@@ -1206,10 +1213,10 @@
         </div>
          <div>
            <div class="row blog__card-block mb-5">
-            <div class="col-4 ">
+            <div class="col-lx-4 col-lg-5 col-md-6 col-sm-10 ">
               <img src="./img/blog-2.png" alt="blog-img" class="blog__card-block_img">
             </div>
-            <div class="col-6 card-txt-block">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-10 card-txt-block">
               <h5 class="h5 blog__card-block_title">Lorem ipsum dolor sit amet, consectetur</h5>
               <div class="blog__card-block_review">
                 <span class="blog__card-block_review-item"><i class="fas fa-user"></i> <i class="card_user-rol">admin</i></span>
@@ -1234,10 +1241,10 @@
          
           <div>
             <div class="row blog__card-block mb-5">
-            <div class="col-4 ">
+            <div class="col-lx-4 col-lg-5 col-md-6 col-sm-10 ">
               <img src="./img/blog-1.png" alt="blog-img" class="blog__card-block_img">
             </div>
-            <div class="col-6 card-txt-block">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-10 card-txt-block">
               <h5 class="h5 blog__card-block_title">Lorem ipsum dolor sit amet, consectetur</h5>
               <div class="blog__card-block_review">
                 <span class="blog__card-block_review-item"><i class="fas fa-user"></i> <i class="card_user-rol">admin</i></span>

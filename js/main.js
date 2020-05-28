@@ -1,4 +1,5 @@
 jQuery(document).ready(function ($) {
+  new WOW().init();
   //nav menu
   // Cache selectors
   var lastId,

@@ -59,10 +59,12 @@
   .baner__carousel-img {
     width: 100%;
     height: auto;
+    
   }
 }
 .baner__carousel-img {
   width: 100%;
+
 }
 #carouselExampleControls {
   .baner__chevron:hover {
@@ -82,20 +84,40 @@
 .btn-two {
   background-color: #131313;
 }
-
-@media screen and (max-width: 567px) {
-  .baner__h2 {
-    width: 90%;
+@media screen and (min-width:587px) and (max-width: 900px){
+  .baner__container{
+    justify-content: flex-end;
   }
-  .baner__descr {
-    width: 90%;
-  }
-  .baner__btns-block {
-    width: 100%;
+}
+@media screen and (max-width: 768px){
+  #carouselExampleControls {
+    .carousel-inner {
+      width: 100%;
+      height: 400px;
+      .carousel-item {
+        width: 100%;
+        height: 100%;
+        .baner__carousel-img {
+          width: auto;
+          height: 100%;
+          position: absolute;
+          top:0;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+   
+    .baner__descr {
+      width: 75%;
+    }
+    .baner__btns-block {
+      width: 75%;
+    }
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 586px) {
   #carouselExampleControls {
     .carousel-inner {
       width: 100%;
@@ -111,9 +133,11 @@
     }
 
     .baner__h2 {
+      width: 90%;
       font-size: 1rem;
     }
     .baner__descr {
+      width: 90%;
       font-size: 0.675rem;
     }
 
@@ -124,6 +148,9 @@
     }
     .baner__chevron {
       display: none;
+    }
+    .baner__btns-block {
+      width: 100%;
     }
   }
 }

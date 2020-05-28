@@ -1,3 +1,4 @@
+@import "./themes";
 .header {
   position: fixed;
   top: 0;
@@ -75,7 +76,7 @@
 }
 
 .border-style-thin {
-  background-color: #ff0036;
+  background-color: $colorRed;
 }
 
 .border-style-thin:after {
@@ -84,6 +85,13 @@
   right: 2px;
   bottom: 2px;
 }
+
+.active-menu {
+  border: 2px solid $colorRed;
+  border-right: none;
+  border-left: none;
+}
+
 @media screen and (max-width: 480px) {
   .header {
     height: 2rem;

@@ -12,7 +12,11 @@
 .span-txt_red {
   color: $colorRed;
 }
-
+.features__figure{
+  display:flex;
+  flex-flow:row;
+  justify-content: center;
+}
 .features__strengths{
     width: 100%;
     padding-top:6rem;

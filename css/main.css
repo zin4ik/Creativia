@@ -43,13 +43,34 @@
 }
 
 #accordionExample .accordion__btn {
+  position: relative;
+  width: 100%;
   font-size: 1.25rem;
+  color: #ff0036;
 }
 
-#accordionExample .accordion__btn .far {
+#accordionExample .accordion__btn i {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
   padding: 0.85rem 1.25rem;
   margin-right: 2.5rem;
-  border-right: 1px solid #ccc;
+  color: #ff0036;
+  -webkit-transition: opacity 0.1s linear;
+  transition: opacity 0.1s linear;
+}
+
+#accordionExample .accordion__btn:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 60px;
+  width: 1px;
+  height: 100%;
+  background: #ccc;
 }
 
 /*===шестиугольник===*/
@@ -80,9 +101,10 @@
 
 .polygon-each_item-front {
   left: 15%;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: translateX(-50%) scale(1.05);
+          transform: translateX(-50%) scale(1.05);
   z-index: 1;
+  left: 50%;
 }
 
 .polygon-each_item {
@@ -333,19 +355,41 @@
   background-color: #131313;
 }
 
-@media screen and (max-width: 567px) {
-  .baner__h2 {
-    width: 90%;
-  }
-  .baner__descr {
-    width: 90%;
-  }
-  .baner__btns-block {
-    width: 100%;
+@media screen and (min-width: 587px) and (max-width: 900px) {
+  .baner__container {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
+  #carouselExampleControls .carousel-inner {
+    width: 100%;
+    height: 400px;
+  }
+  #carouselExampleControls .carousel-inner .carousel-item {
+    width: 100%;
+    height: 100%;
+  }
+  #carouselExampleControls .carousel-inner .carousel-item .baner__carousel-img {
+    width: auto;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  #carouselExampleControls .baner__descr {
+    width: 75%;
+  }
+  #carouselExampleControls .baner__btns-block {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 586px) {
   #carouselExampleControls .carousel-inner {
     width: 100%;
     height: 400px;
@@ -359,9 +403,11 @@
     height: 100%;
   }
   #carouselExampleControls .baner__h2 {
+    width: 90%;
     font-size: 1rem;
   }
   #carouselExampleControls .baner__descr {
+    width: 90%;
     font-size: 0.675rem;
   }
   #carouselExampleControls .baner__btn {
@@ -371,6 +417,9 @@
   }
   #carouselExampleControls .baner__chevron {
     display: none;
+  }
+  #carouselExampleControls .baner__btns-block {
+    width: 100%;
   }
 }
 
@@ -484,7 +533,7 @@
   background-color: #f2f2f2;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 920px) {
   .blog__card-block_descr {
     overflow: hidden;
   }
@@ -495,7 +544,7 @@
 }
 
 .client {
-  background-image: url(/img/about2.jpg);
+  background-image: url(https://zin4ik.github.io/creativia/img/about2.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -643,6 +692,8 @@
   padding: 3rem 2.5rem;
   -webkit-box-shadow: 1px 1px 13px 1px rgba(0, 0, 0, 0.36);
           box-shadow: 1px 1px 13px 1px rgba(0, 0, 0, 0.36);
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 
 .form-block input {
@@ -685,7 +736,7 @@
     -webkit-transition: all 0.2s linear;
     transition: all 0.2s linear;
   }
-  .form-block:hover, :focus, :active {
+  .form-block-active {
     width: 300px;
     height: auto;
     left: 10px;
@@ -694,6 +745,8 @@
     cursor: pointer;
     padding: 0.875rem 2rem;
     text-align: center;
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
   }
 }
 
@@ -806,6 +859,12 @@ footer {
   left: 2px;
   right: 2px;
   bottom: 2px;
+}
+
+.active-menu {
+  border: 2px solid #ff0036;
+  border-right: none;
+  border-left: none;
 }
 
 @media screen and (max-width: 480px) {
@@ -1200,9 +1259,17 @@ footer {
   }
 }
 
-@media screen and (min-width: 576px) and (max-width: 767px) {
+@media screen and (min-width: 587px) and (max-width: 767px) {
   .services__block-item_descr {
     height: 12rem;
+    padding: 1rem;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 586px) {
+  .services__block-item_descr {
+    max-height: 12rem;
     padding: 1rem;
     overflow: hidden;
   }
@@ -12186,6 +12253,19 @@ a.text-dark:hover, a.text-dark:focus {
   color: #ff0036;
 }
 
+.features__figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .features__strengths {
   width: 100%;
   padding-top: 6rem;
@@ -12261,6 +12341,7 @@ a.text-dark:hover, a.text-dark:focus {
           transform: rotate(-25deg);
   font-size: 10rem;
   color: #3d3d3d;
+  z-index: -1;
 }
 
 .twitter-block__content {

@@ -41,11 +41,30 @@
     border-bottom: 1px solid #ccc;
   }
   .accordion__btn {
+    position: relative;
+    width: 100%;
     font-size: 1.25rem;
-    .far {
+    color: $colorRed;
+
+    i {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
       padding: 0.85rem 1.25rem;
       margin-right: 2.5rem;
-      border-right: 1px solid #ccc;
+      color: $colorRed;
+      transition:opacity 0.1s linear;
+    }
+    &:before{
+      content:'';
+      display:block;
+      position: absolute;
+      top:0;
+      left:60px;
+      width:1px;
+      height:100%;
+      background: #ccc ;
     }
   }
 }
@@ -74,8 +93,9 @@
 
 .polygon-each_item-front {
   left: 15%;
-  transform: scale(1.05);
+  transform: translateX(-50%) scale(1.05);
   z-index: 1;
+  left: 50%;
 }
 // .polygon-each_ite-2::after {
 // border-left: 5px sol;
